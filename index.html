@@ -52,6 +52,11 @@
 </section>
 
 <section class="card">
+<div class="section-head"><h2>回数指定</h2></div>
+<div class="field"><label>○連以内の確率（任意）</label><input id="budget" type="number" min="1" max="6000" value="" placeholder="例：300" inputmode="numeric"></div>
+<div id="budgetResult" class="prob-box hidden"><div class="prob-head"><small id="budgetLabel">—連以内</small><strong id="within">—</strong></div><div class="track"><div class="fill" id="budgetBar"></div></div></div>
+</section>
+<section class="card">
 <div class="section-head"><h2>結果</h2></div>
 <div id="emptyResult" class="empty hidden">目標数を1以上に設定してください。</div>
 <div id="resultArea">
@@ -60,11 +65,6 @@
 </div>
 <details><summary>計算条件</summary><div class="spec-body"><div id="targetSummary" class="summary-line"></div><div id="conditionSummary" class="condition-summary"></div></div></details>
 <details><summary>計算仕様</summary><div class="spec-body"><div class="spec-row"><span>キャラ★5</span><strong>基礎0.6% / 90連以内</strong></div><div class="spec-row"><span>キャラ実測モデル</span><strong>74連目から上昇</strong></div><div class="spec-row"><span>武器★5</span><strong>基礎0.7% / 公式80連以内</strong></div><div class="spec-row"><span>武器の計算モデル</span><strong>63連目から上昇 / 77連目100%</strong></div><div class="spec-row"><span>ピックアップ★5武器</span><strong>75% / ピックアップ2本の内訳は各50%</strong></div><div class="spec-row"><span>命定値</span><strong>最大1</strong></div><div class="spec-row"><span>明光発動率</span><strong>0:0.018% / 1:0.274% / 2:8.333% / 確定:100%</strong></div><p class="note">明光カウント1・2とソフト天井は実測・推定モデルです。</p></div></details>
-</section>
-<section class="card">
-<div class="section-head"><h2>回数指定</h2></div>
-<div class="field"><label>○連以内の確率（任意）</label><input id="budget" type="number" min="1" max="6000" value="" placeholder="例：300" inputmode="numeric"></div>
-<div id="budgetResult" class="prob-box hidden"><div class="prob-head"><small id="budgetLabel">—連以内</small><strong id="within">—</strong></div><div class="track"><div class="fill" id="budgetBar"></div></div></div>
 <button id="resetBtn" class="reset" type="button">入力を初期化</button>
 </section>
 </div>
